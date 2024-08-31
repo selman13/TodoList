@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#theme {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#sun,
+#mode,
+#moon {
+  width: 60px;
+  height: 60px;
+}
+
+#moon {
+  visibility: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container .todoDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.container .todoDiv .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.container .todoDiv .buttons button {
+  padding: 10px;
+  border: none;
+  color: white;
+}
+
+.container .todoDiv .buttons .edit {
+  background-color: orange;
+}
+
+.container .todoDiv .buttons .change {
+  background-color: blue;
+}
+
+.container .todoDiv .buttons .delete {
+  background-color: red;
+}
+
+.container .todoDiv .text {
+  font-size: 30px;
+}
+
+.todoDetails {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+}
+
+.todoDetails .searchTodo input {
+  padding: 10px;
+  outline-color: green;
+}
+
+.todoDetails .newTodo {
+  padding: 10px;
+}
+
+.todoDetails .newTodo button {
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+}
